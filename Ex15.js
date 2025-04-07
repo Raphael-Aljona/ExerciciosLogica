@@ -13,5 +13,3 @@ for (i = 0; i < matriz[0].length; i++){
 }
 
 console.log(novaMatriz)
-console.log(novaMatriz.length)
-console.log(novaMatriz[0].length)
