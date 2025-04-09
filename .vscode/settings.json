@@ -1,7 +1,0 @@
-{
-    "discord.detailsEditing": "Editing {workspace}",
-    "discord.lowerDetailsEditing": "Workspace {dir_name}",
-    "discord.removeRemoteRepository": false,
-    "discord.removeLowerDetails": true,
-    "discord.lowerDetailsDebugging": "Debugging: {dir_name}"
-}
