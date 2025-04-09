@@ -1,1 +1,0 @@
-                console.log("Não é igual a transposta")
