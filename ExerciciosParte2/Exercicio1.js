@@ -4,7 +4,6 @@ let array = [
     10, 8, 89, 98, 18, 43, 15, 23, 5, 55
 ]
 
-let numAnterior;
 let atualizarNum;
 
 for (let i = 0; i < array.length; i++){
@@ -12,7 +11,7 @@ for (let i = 0; i < array.length; i++){
         if (array[j] > array [j + 1]){
             atualizarNum = array[j]
             array[j] = array[j + 1]
-            array [j + 1] = atualizarNum   
+            array [j + 1] = atualizarNum
         }
     }
 }
