@@ -8,13 +8,13 @@
 const arrayImpar = [15, 13, 17]
 const arrayPar = [22, 18, 98]
 let intercalando = []
-let valor = 0;
+let index = 0;
 
 for (let i = 0; i < arrayImpar.length; i++){
-    intercalando[valor] = arrayImpar[i];
-    valor ++;
-    intercalando[valor] = arrayPar[i];
-    valor ++;
+    intercalando[index] = arrayImpar[i];
+    index ++;
+    intercalando[index] = arrayPar[i];
+    index ++;
 }
 
 console.log(intercalando)

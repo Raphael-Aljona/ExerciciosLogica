@@ -5,16 +5,19 @@
 // Número: [6]
 // Saída: [2, 4]
 
-const array = [3, 4, 5, 2]
-let numero = 8
-let numAnterior = 0;
+const array = [3, 4, 5, 2];
+const numero = 8;
+let encontrou = false;
 
-for (let i = 0; i < array.length; i++){
-    numAnterior = array[i]
-    for (let j = 0; j < array.length; j++){
-        if(numero == (numAnterior + array[j + 1])){
-            console.log (numAnterior + " " + array[j + 1])
+for (let i = 0; i < array.length; i++) {
+    for (let j = i + 1; j < array.length; j++) { // j = i + 1 -> previne do index somar com si mesmo. Ex: 4 + 4 -> SERIA IMPOSSIVEL
+        if (array[i] + array[j] === numero) {
+            console.log(array[i], array[j]);
+            encontrou = true;
         }
     }
 }
 
+if (!encontrou) {
+    console.log(0);
+}

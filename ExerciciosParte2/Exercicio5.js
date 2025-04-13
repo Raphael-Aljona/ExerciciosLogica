@@ -7,14 +7,14 @@
 
 const arrayUm = [1, 2, 3, 4, 2, 4]
 const arrayDois = [2, 0, 4, 2]
-let valor = 0;
+let index = 0;
 let novoArray= [];
 
 for (let i = 0; i < arrayUm.length; i++){
     for (let j = 0; j <arrayDois.length; j++){
         if (arrayUm[i] == arrayDois[j]){
-            novoArray[valor] = arrayUm[i]
-            valor++;
+            novoArray[index] = arrayUm[i]
+            index++;
             arrayDois.splice(j, 1); //Unica função que encontrei que conseguia entrar nesse caso
             break;
         }
